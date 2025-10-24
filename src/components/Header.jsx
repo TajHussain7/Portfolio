@@ -1,15 +1,17 @@
+import Tajamal from "../assets/images/Tajamal .jpg";
+
 const Header = () => {
   return (
     <div>
-      <header className="bg-white shadow-lg fixed w-full z-50">
+      <header className="fixed w-full z-50 backdrop-blur-sm bg-white/70 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             {/* Logo + Name */}
             <div className="flex items-center space-x-3 shrink-0">
               <img
-                src="/images/Tajamal .jpg"
+                src={Tajamal}
                 alt="Tajamal Hussain Logo"
-                className="w-12 h-12 rounded-full object-cover border-2 border-blue-600"
+                className="w-12 h-12 rounded-full object-cover border-2 border-blue-600 transition-transform transform hover:scale-105"
               />
               <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
                 <span className="text-blue-600">Tajamal Hussain</span>
@@ -17,28 +19,28 @@ const Header = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
+            <nav className="hidden md:flex space-x-8 items-center">
               <a
                 href="#home"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-lg font-medium transition-colors"
+                className="text-gray-700 hover:text-blue-600 hover:underline underline-offset-4 px-3 py-2 text-lg font-medium transition-all"
               >
                 Home
               </a>
               <a
                 href="#about"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-lg font-medium transition-colors"
+                className="text-gray-700 hover:text-blue-600 hover:underline underline-offset-4 px-3 py-2 text-lg font-medium transition-colors"
               >
                 About
               </a>
               <a
                 href="#projects"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-lg font-medium transition-colors"
+                className="text-gray-700 hover:text-blue-600 hover:underline underline-offset-4 px-3 py-2 text-lg font-medium transition-colors"
               >
                 Projects
               </a>
               <a
                 href="#contact"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-lg font-medium transition-colors"
+                className="text-gray-700 hover:text-blue-600 hover:underline underline-offset-4 px-3 py-2 text-lg font-medium transition-colors"
               >
                 Contact
               </a>
@@ -50,7 +52,7 @@ const Header = () => {
       {/* Hero Section */}
       <section
         id="home"
-        className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-25"
+        className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-40"
       >
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center">
@@ -68,13 +70,13 @@ const Header = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#projects"
-                className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors"
+                className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors shadow-lg hover:shadow-xl"
               >
                 View My Work
               </a>
               <a
                 href="#contact"
-                className="border-2 border-white hover:bg-white hover:text-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-colors"
+                className="border-2 border-white hover:bg-white/10 text-white font-bold py-3 px-8 rounded-lg transition-colors"
               >
                 Get In Touch
               </a>

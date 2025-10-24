@@ -46,19 +46,19 @@ const About = () => {
 
             {/* Stats */}
             <div className="grid grid-cols-2 gap-6 pt-6">
-              <div className="text-center">
+              <div className="text-center bg-white p-6 rounded-lg shadow-sm">
                 <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
                 <div className="text-gray-600">Projects Completed</div>
               </div>
-              <div className="text-center">
+              <div className="text-center bg-white p-6 rounded-lg shadow-sm">
                 <div className="text-3xl font-bold text-blue-600 mb-2">3+</div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
-              <div className="text-center">
+              <div className="text-center bg-white p-6 rounded-lg shadow-sm">
                 <div className="text-3xl font-bold text-blue-600 mb-2">25+</div>
                 <div className="text-gray-600">Happy Clients</div>
               </div>
-              <div className="text-center">
+              <div className="text-center bg-white p-6 rounded-lg shadow-sm">
                 <div className="text-3xl font-bold text-blue-600 mb-2">
                   100%
                 </div>
@@ -72,7 +72,7 @@ const About = () => {
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">
               My Skills
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-9">
               {skills.map((skill, index) => (
                 <div key={index} className="space-y-2">
                   <div className="flex justify-between items-center">
@@ -85,8 +85,11 @@ const About = () => {
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
                     <div
-                      className="bg-blue-600 h-2 rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: `${skill.level}%` }}
+                      className="h-2 rounded-full transition-all duration-1000 ease-out"
+                      style={{
+                        width: `${skill.level}%`,
+                        background: "linear-gradient(90deg,#2563eb,#8b5cf6)",
+                      }}
                     ></div>
                   </div>
                 </div>

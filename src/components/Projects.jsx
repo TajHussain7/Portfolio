@@ -1,24 +1,34 @@
 import ProjectCard from "./ProjectCard";
+import ProjectOne from "../assets/images/ProjectOne.png";
+import ProjectTwo from "../assets/images/ProjectTwo.png";
+import ProjectThree from "../assets/images/ProjectThree.png";
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "SkyWay Travel Agency",
       description:
-        "A full-stack e-commerce application built with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, and payment integration.",
-      image: "/images/ProjectImage.png",
+        "A comprehensive travel booking platform with flight search, hotel reservations, and tour packages. Built with React, Node.js, and integrated with travel APIs.",
+      image: ProjectOne,
+      liveDemo:
+        "https://tajhussain7.github.io/SkyWay_Travel_Agency/Main_Page/index.html",
+      repo: "https://github.com/TajHussain7/SkyWay_Travel_Agency",
     },
     {
-      title: "Task Management App",
+      title: "Kashi Pizza Home",
       description:
-        "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "/images/ProjectImage.png",
+        "Custom restaurant management software featuring online ordering, menu customization, and real-time order tracking. Built with React and Firebase.",
+      image: ProjectTwo,
+      liveDemo: "https://kashi-pizza-home.vercel.app/",
+      repo: "https://github.com/TajHussain7/Kashi-Pizza-Home",
     },
     {
-      title: "Weather Dashboard",
+      title: "AutoMetrics Dashboard",
       description:
-        "A responsive weather dashboard that displays current weather conditions and forecasts for multiple cities with interactive maps.",
-      image: "/images/ProjectImage.png",
+        "Analytics dashboard for automotive businesses with real-time metrics, inventory management, and sales tracking. Built with React, TypeScript and Chart.js.",
+      image: ProjectThree,
+      liveDemo: "https://tajhussain7.github.io/autometrics/",
+      repo: "https://github.com/TajHussain7/autometrics",
     },
   ];
 
@@ -43,6 +53,8 @@ const Projects = () => {
               title={project.title}
               description={project.description}
               image={project.image}
+              liveDemo={project.liveDemo}
+              repo={project.repo}
             />
           ))}
         </div>

@@ -64,7 +64,7 @@ const Footer = () => {
   return (
     <footer id="contact" className="bg-gray-900 text-white">
       {/* Contact Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 py-16">
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-4xl font-bold mb-4">Let's Work Together</h2>
@@ -73,13 +73,13 @@ const Footer = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:john.doe@example.com"
-                className="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-8 rounded-lg transition-colors"
+                href="mailto:tajamaltajamal702@gamil.com"
+                className="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-8 rounded-lg transition-colors shadow-md"
               >
                 Send me an email
               </a>
               <a
-                href="tel:+1234567890"
+                href="tel:+923438002540"
                 className="border-2 border-white hover:bg-white hover:text-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-colors"
               >
                 Call me
@@ -108,7 +108,7 @@ const Footer = () => {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-400 hover:text-white transition-colors transform hover:scale-110"
                     aria-label={social.name}
                   >
                     {social.icon}
